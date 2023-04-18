@@ -1,0 +1,44 @@
+
+body {
+  
+    height: 100vh;
+    
+}
+/* regole header */
+#bar{
+    position: relative;
+}
+.navbar-brand img{
+    width: 60px;
+}
+.fa-magnifying-glass{
+    font-size: 15px;
+    position: absolute;
+    top: 12px;
+    left: 5px;
+}
+.fa-bell{
+    font-size: 15px;
+    color: #ff9005;
+}
+/* debug */
+nav{
+    height: 80px;
+    background-color: black;
+}
+.minus{
+    width: 100%;
+    height:calc(100vh - 80px);
+    background-color: blueviolet;
+}
+ .left-side{
+    width: 60px;
+    height: 100%;
+    background-color: chartreuse;
+    color: white;
+}
+.right-side{
+    width: calc(100% - 60px);
+    height: 100%;
+    background-color: coral;
+}
