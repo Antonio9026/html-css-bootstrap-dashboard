@@ -1,44 +1,82 @@
-
 body {
-  
+
     height: 100vh;
-    
+
 }
+
+#main-top {
+
+    width: 100%;
+    background-color: #1b72e8;
+
+}
+
 /* regole header */
-#bar{
+#bar {
     position: relative;
 }
-.navbar-brand img{
+
+.navbar-brand img {
     width: 60px;
 }
-.fa-magnifying-glass{
+
+.fa-magnifying-glass {
     font-size: 15px;
     position: absolute;
     top: 12px;
     left: 5px;
 }
-.fa-bell{
+
+.fa-bell {
     font-size: 15px;
     color: #ff9005;
 }
+/* regloe left side */
+.left-side {
+    width: 60px;
+    height: 100%;
+    background-color:#051e34 ;
+    background-image:url(../img/sidebar-bg.png);
+    color: white;
+}
+
 /* debug */
-nav{
+nav {
     height: 80px;
     background-color: black;
 }
-.minus{
+
+.minus {
     width: 100%;
-    height:calc(100vh - 80px);
+    height: calc(100vh - 80px);
     background-color: blueviolet;
 }
- .left-side{
+
+/* .left-side {
     width: 60px;
     height: 100%;
     background-color: chartreuse;
     color: white;
-}
-.right-side{
+} */
+
+.right-side {
     width: calc(100% - 60px);
     height: 100%;
     background-color: coral;
+    overflow: scroll;
+}
+
+.col .right-side {
+    height: 100px;
+    background-color: blue;
+    border: 1px solid yellow;
+}
+@media screen and (min-width:767px) {
+    .left-side{
+        width: 100px; 
+    }
+    .right-side {
+        width: calc(100% - 100px);
+       ;
+    }
 }
