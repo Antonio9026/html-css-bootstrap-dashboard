@@ -21,17 +21,40 @@
             <div class="container-fluid">
                 <a class="navbar-brand">
 
-                    <img src="img/mobile-logo.png" alt="">
+                    <img class="img-smart d-md-none d-lg-none" src="img/mobile-logo.png" alt="">
+                    <img class="img-desk d-none d-sm-none  d-md-block" src="img/logo.svg" alt="">
                 </a>
-                <form class="d-flex col  " role="search">
-                    <div id="bar" class="col-11 ms-4">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input class="form-control me-2 " type="search"
-                            placeholder="   Prova a cercare: Lezioni di lavarel" aria-label="Search">
+                <form class="d-flex col justify-content-center" role="search">
+                    <div id="bar" class="col-11 ms-4 ">
+
+                        <div class="input-group mb-3 ">
+                            <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class=form-control bg-danger-subtle " aria-label=" Dollar amount (with
+                                dot and two decimal places)">
+                        </div>
+
                     </div>
 
                 </form>
-                <i class="fa-solid fa-bell"></i>
+
+                <a href="#"><i class="fa-solid fa-list  d-none d-sm-none d-md-none d-lg-block text-dark p-2"></i></a>
+                <a href="#"><i
+                        class="fa-solid fa-circle-question d-none d-sm-none d-md-none d-lg-block text-dark  p-2"></i></a>
+                <a href="#"><i
+                        class="fa-solid fa-ellipsis-vertical d-none d-sm-none d-md-none d-lg-block text-dark  p-2"></i></a>
+                <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle  " type="button" data-bs-toggle="dropdown" >
+                        <a href="#"><i class="fa-solid fa-bell"></i></a>
+                      </button>
+                    <ul class="dropdown-menu dropdown-menu-end  ">
+                        <li><button class="dropdown-item" type="button">Action</button></li>
+                        <li><button class="dropdown-item" type="button">Another action</button></li>
+                        <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                </div>
+              
+
+
             </div>
         </nav>
 
@@ -40,20 +63,21 @@
 
 
 
-    <main>
+    <main class="bg-white">
         <!-- navigator-lef-side -->
-        <div class="minus d-flex">
+        <div class="minus d-flex ">
             <div class="left-side">
                 <div class="container  d-md-none d-lg-none h-100 d-flex  flex-column justify-content-between">
                     <div class="row d-flex flex-column py-3">
                         <div class="col d-flex justify-content-center py-1 ">
-                            <i class="fa-solid fa-house"></i>
+                            
+                            <a href=""></a><i class="fa-solid fa-house"></i></a>
                         </div>
-                        <div class="col col d-flex justify-content-center py-1 ">
+                        <div class="col  d-flex justify-content-center py-1 ">
                             <i class="fa-solid fa-chart-simple"></i>
                         </div>
-                        <div class="col col d-flex justify-content-center py-1 ">
-                            <i class="fa-solid fa-signal"></i>
+                        <div class="col  d-flex justify-content-center py-1 ">
+                            <i class="fa-solid fa-signal "></i>
                         </div>
                     </div>
                     <div class="row  pb-3">
@@ -64,20 +88,20 @@
                 </div>
                 <div class="container  h-100 d-flex  flex-column justify-content-between">
                     <div class="row d-flex flex-column py-3">
-                        <div class="col d-flex justify-content-center py-1 ">
+                        <div class="col  d-flex justify-content-center py-1 ">
                             <div class="icon">
                                 <i class="fa-solid fa-house"></i>
                                 <span>Home</span>
                             </div>
 
                         </div>
-                        <div class="col col d-flex justify-content-center py-1 ">
+                        <div class="col  col d-flex justify-content-center py-1 ">
                             <div class="icon">
                                 <i class="fa-solid fa-chart-simple"></i>
                                 <span>Stats</span>
                             </div>
                         </div>
-                        <div class="col col d-flex justify-content-center py-1 ">
+                        <div  class="col d-flex justify-content-center py-1 ">
                             <div class="icon">
                                 <i class="fa-solid fa-signal"></i>
                                 <span>Signals</span>
@@ -85,7 +109,7 @@
                         </div>
                     </div>
                     <div class="row  pb-3">
-                        <div class="col d-flex justify-content-center ">
+                        <div class="col left d-flex justify-content-center ">
                             <div class="icon">
                                 <i class="fa-solid fa-gear"></i>
                                 <span>Admin</span>
@@ -96,11 +120,9 @@
             </div>
 
             <div class="right-side">
-                <div id="main-top" class="row ms-0 text-white pt-4 overflow-hidden">
+                <!-- SEZIONE HEADER MAIN -->
+                <div id="main-top" class="row  ms-0 text-white pt-4 overflow-hidden">
                     <div class="row ">
-
-
-
                         <div class="pb-3 col-12 col-md-4 col-lg-6">
                             <span class="fs-2">Boolean</span>
                             <button type="button" class="btn btn-sm bg-button-blue text-white rounded-pill">Piano
@@ -133,19 +155,21 @@
                     </div>
 
                 </div>
+                <!-- SEZIONE PROSSIME CLASSI -->
                 <div id="main-bottom" class="d-lg-flex ">
                     <div class="col-lg-8">
 
-                        <div class="border rounded bg-white m-3 ">
-                            <div class="bg-tab-title p-2">
-                                <h3>Prossime classi</h3>
-                            </div>
-                            <hr class="mt-0">
-                            <div class="m-3">
+                        <div class=" row border rounded bg-white m-3 ">
+                            <div class="col border rounded  m-3 ">
+                                <div class="bg-tab-title p-2">
+                                    <h3>Prossime classi</h3>
+                                    <hr class="mt-0">
+                                </div>
+
                                 <table class="table table-light">
                                     <tr>
                                         <th class="col-4 ">Nome</th>
-                                        <th class="col-2 d-none d-sm-none d-md-block"> Data inizio</th>
+                                        <th class="col-2 d-none d-sm-none d-md-block">Data inizio</th>
                                         <th class="col-2"> ROI</th>
                                         <th class="col-2">Stato</th>
                                         <th class="col-2">azioni</th>
@@ -158,8 +182,8 @@
                                             <button type="button" class="btn btn-success">Done</button>
                                         </td>
                                         <td><button type="button" class="btn btn-outline-secondary me-1"><i
-                                                    class="fa-solid fa-pen"></i></button></button><button type="button"
-                                                class="btn btn-outline-secondary "><i
+                                                    class="fa-solid fa-pen"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary "><i
                                                     class="fa-solid fa-trash-can"></i></button>
                                         </td>
                                     </tr>
@@ -167,11 +191,15 @@
                                         <td><i class="fa-solid fa-o"></i> Classe 76</td>
                                         <td class=" d-none d-sm-none d-md-block">16 feb 2021</td>
                                         <td>20%</td>
-                                        <td><button type="button" class="btn btn-success">Done</button></td>
-                                        <td><button type="button" class="btn btn-outline-secondary me-1"><i
-                                                    class="fa-solid fa-pen"></i></button></button><button type="button"
-                                                class="btn btn-outline-secondary"><i
-                                                    class="fa-solid fa-trash-can"></i></button></td>
+                                        <td>
+                                            <button type="button" class="btn btn-success">Done</button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary me-1"><i
+                                                    class="fa-solid fa-pen"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i
+                                                    class="fa-solid fa-trash-can"></i></button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa-solid fa-o"></i> Classe 77</td>
@@ -181,19 +209,24 @@
                                             <button type="button" class="btn btn-warning">Process</button>
                                         </td>
                                         <td><button type="button" class="btn btn-outline-secondary me-1"><i
-                                                    class="fa-solid fa-pen"></i></button></button><button type="button"
-                                                class="btn btn-outline-secondary"><i
-                                                    class="fa-solid fa-trash-can"></i></button></td>
+                                                    class="fa-solid fa-pen"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i
+                                                    class="fa-solid fa-trash-can"></i></button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa-solid fa-o"></i> Classe 78</td>
                                         <td class=" d-none d-sm-none d-md-block">18 feb 2021</td>
                                         <td>20%</td>
-                                        <td><button type="button" class="btn btn-success">Done</button></td>
-                                        <td><button type="button" class="btn btn-outline-secondary me-1"><i
-                                                    class="fa-solid fa-pen"></i></button></button><button type="button"
-                                                class="btn btn-outline-secondary"><i
-                                                    class="fa-solid fa-trash-can"></i></button></td>
+                                        <td>
+                                            <button type="button" class="btn btn-success">Done</button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary me-1"><i
+                                                    class="fa-solid fa-pen"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i
+                                                    class="fa-solid fa-trash-can"></i></button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa-solid fa-o"></i> Classe 79</td>
@@ -233,86 +266,153 @@
                                         <td><button type="button" class="btn btn-outline-secondary me-1"><i
                                                     class="fa-solid fa-pen"></i></button><button type="button"
                                                 class="btn btn-outline-secondary"><i
-                                                    class="fa-solid fa-trash-can"></i></button></td>
+                                                    class="fa-solid fa-trash-can"></i></button>
+                                        </td>
                                     </tr>
                                 </table>
 
                             </div>
 
                         </div>
-                        <div class="row border rounded bg-white m-3">
+                        <!-- sezione F.A.Q -->
+                        <div class="row border rounded bg-white m-3 ">
+                            <div class="col border rounded   m-3 ">
+                                <div class="col-8-lg d-flex flex-column  ">
 
-                            <div class="col-8-lg d-flex flex-column  ">
+                                    <div class="bg-tab-title p-2">
+                                        <h3>F.A.Q.</h3>
+                                        <hr>
+                                    </div>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Come aggiungere un nuovo studente?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Clicca sul + in alto sulla sezione blu
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Clicca sull'icona della campanella.
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the third item's accordion body.</strong> It is
+                                                    hidden
+                                                    by default, until the collapse plugin adds the appropriate
+                                                    classes
+                                                    that
+                                                    we use to style each element. These classes control the overall
+                                                    appearance, as well as the showing and hiding via CSS
+                                                    transitions.
+                                                    You
+                                                    can modify any of this with custom CSS or overriding our default
+                                                    variables. It's also worth noting that just about any HTML can
+                                                    go
+                                                    within
+                                                    the <code>.accordion-body</code>, though the transition does
+                                                    limit
+                                                    overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class=" row border rounded bg-white m-3 ">
+                            <div class="col border rounded  m-3 ">
                                 <div class="bg-tab-title p-2">
-                                    <h3>F.A.Q.</h3>
+                                    <h3>Todo</h3>
+
                                 </div>
                                 <hr>
-
-
-
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">
-                                                Come aggiungere un nuovo studente?
-                                            </button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Clicca sul + in alto sulla sezione blu
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                aria-expanded="false" aria-controls="collapseTwo">
-                                               Come posso accedere alle informazioni del mio account?
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                Clicca sull'icona della campanella.
-                                          
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                aria-expanded="false" aria-controls="collapseThree">
-                                              Posso usare questa dashboard da mobile?
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse"
-                                            data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <strong>This is the third item's accordion body.</strong> It is hidden
-                                                by default, until the collapse plugin adds the appropriate classes that
-                                                we use to style each element. These classes control the overall
-                                                appearance, as well as the showing and hiding via CSS transitions. You
-                                                can modify any of this with custom CSS or overriding our default
-                                                variables. It's also worth noting that just about any HTML can go within
-                                                the <code>.accordion-body</code>, though the transition does limit
-                                                overflow.
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="form-check m-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Kickoff nuove classi
+                                    </label>
                                 </div>
+                                <div class="form-check m-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Lezioni su Bootstrap 5 in classe #75
+                                    </label>
+                                </div>
+
+                                <div class="form-check  m-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Controllare username github studenti
+                                    </label>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class=" row border rounded m-3 bg-white ">
+                                <div class="col border rounded  m-3 ">
+                                    <img src="img/stats.jpeg" class="img-fluid" alt="...">
+
+
+                                    <div class="bg-tab-title p-2">
+                                        <h3>Utenti attivi</h3>
+                                        <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+
+                                    </div>
+                                    <hr>
+                                    <p>Gennaio:1200</p>
+                                    <p>Febbraio:800</p>
+                                    <p>Marzo:1500</p>
+                                    <a href="http://">Visualizza report approfondito</a>
+
+                                </div>
+
+
 
 
                             </div>
                         </div>
                     </div>
+
+
+
                 </div>
+
             </div>
-        </div>
     </main>
 
 

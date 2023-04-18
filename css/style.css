@@ -12,14 +12,22 @@ body {
 }
 
 /* regole header */
+.navbar {
+    height: 60px;
+}
+.navbar a{
+    text-decoration: none;
+}
 #bar {
     position: relative;
 }
 
-.navbar-brand img {
-    width: 60px;
+.img-smart {
+    width: 40px;
 }
-
+.img-desk{
+    width: 100px; 
+}
 .fa-magnifying-glass {
     font-size: 15px;
     position: absolute;
@@ -39,6 +47,10 @@ body {
     background-image:url(../img/sidebar-bg.png);
     color: white;
 }
+.icon:hover{
+background-color: rgba(255, 255, 255, 0.2);
+
+}
 
 /* debug */
 nav {
@@ -48,8 +60,8 @@ nav {
 
 .minus {
     width: 100%;
-    height: calc(100vh - 80px);
-    background-color: blueviolet;
+    height: calc(100vh - 60px);
+
 }
 
 /* .left-side {
@@ -62,7 +74,7 @@ nav {
 .right-side {
     width: calc(100% - 60px);
     height: 100%;
-    background-color: coral;
+ 
     overflow: scroll;
 }
 
