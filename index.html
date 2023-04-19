@@ -10,50 +10,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- header -->
     <header>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand">
+        <nav class="navbar bg-body-tertiary ">
+            <div class="container-fluid ">
+                <div class="col d-flex align-items-center">
+                    <a class="navbar-brand ">
 
-                    <img class="img-smart d-md-none d-lg-none" src="img/mobile-logo.png" alt="">
-                    <img class="img-desk d-none d-sm-none  d-md-block" src="img/logo.svg" alt="">
-                </a>
-                <form class="d-flex col justify-content-center" role="search">
-                    <div id="bar" class="col-11 ms-4 ">
+                        <img class="img-smart d-md-none d-lg-none" src="img/mobile-logo.png" alt="">
+                        <img class="img-desk d-none d-sm-none  d-md-block" src="img/logo.svg" alt="">
+                    </a>
+                    <form class="d-flex col justify-content-center " role="search">
+                        <div id="bar" class="col-11 ms-4 ">
 
-                        <div class="input-group mb-3 ">
-                            <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <input type="text" class=form-control bg-danger-subtle " aria-label=" Dollar amount (with
-                                dot and two decimal places)">
+                            <div class="input-group  mb-2 ">
+                                <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control  " aria-label=" Dollar amount
+                                    (with dot and two decimal places)">
+                            </div>
+
                         </div>
 
+                    </form>
+
+                    <a href="#"><i
+                            class="fa-solid fa-list  d-none d-sm-none d-md-none d-lg-block text-dark p-2"></i></a>
+                    <a href="#"><i
+                            class="fa-solid fa-circle-question d-none d-sm-none d-md-none d-lg-block text-dark  p-2"></i></a>
+                    <a href="#"><i
+                            class="fa-solid fa-ellipsis-vertical d-none d-sm-none d-md-none d-lg-block text-dark  p-2"></i></a>
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle  " type="button" data-bs-toggle="dropdown">
+                            <a href="#"><i class="fa-solid fa-bell"></i></a>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end  ">
+                            <li><button class="dropdown-item" type="button">Profilo </button></li>
+                            <li><button class="dropdown-item" type="button">Fatturazione log-out</button></li>
+                            <li><button class="dropdown-item" type="button">Log-out</button></li>
+                        </ul>
                     </div>
 
-                </form>
-
-                <a href="#"><i class="fa-solid fa-list  d-none d-sm-none d-md-none d-lg-block text-dark p-2"></i></a>
-                <a href="#"><i
-                        class="fa-solid fa-circle-question d-none d-sm-none d-md-none d-lg-block text-dark  p-2"></i></a>
-                <a href="#"><i
-                        class="fa-solid fa-ellipsis-vertical d-none d-sm-none d-md-none d-lg-block text-dark  p-2"></i></a>
-                <div class="dropdown">
-                    <button class="btn btn-link dropdown-toggle  " type="button" data-bs-toggle="dropdown" >
-                        <a href="#"><i class="fa-solid fa-bell"></i></a>
-                      </button>
-                    <ul class="dropdown-menu dropdown-menu-end  ">
-                        <li><button class="dropdown-item" type="button">Action</button></li>
-                        <li><button class="dropdown-item" type="button">Another action</button></li>
-                        <li><button class="dropdown-item" type="button">Something else here</button></li>
-                    </ul>
                 </div>
-              
-
 
             </div>
         </nav>
@@ -70,7 +73,7 @@
                 <div class="container  d-md-none d-lg-none h-100 d-flex  flex-column justify-content-between">
                     <div class="row d-flex flex-column py-3">
                         <div class="col d-flex justify-content-center py-1 ">
-                            
+
                             <a href=""></a><i class="fa-solid fa-house"></i></a>
                         </div>
                         <div class="col  d-flex justify-content-center py-1 ">
@@ -101,7 +104,7 @@
                                 <span>Stats</span>
                             </div>
                         </div>
-                        <div  class="col d-flex justify-content-center py-1 ">
+                        <div class="col d-flex justify-content-center py-1 ">
                             <div class="icon">
                                 <i class="fa-solid fa-signal"></i>
                                 <span>Signals</span>
@@ -125,22 +128,22 @@
                     <div class="row ">
                         <div class="pb-3 col-12 col-md-4 col-lg-6">
                             <span class="fs-2">Boolean</span>
-                            <button type="button" class="btn btn-sm bg-button-blue text-white rounded-pill">Piano
+                            <button type="button" class="btn btn-sm bg-button-blue   text-white rounded-pill">Piano
                                 blaze</button>
                             <br>
-                            <button type="button" class="btn btn-sm bg-button-blue text-white rounded-pill">3
+                            <button type="button" class="btn btn-sm  text-white rounded-pill">3
                                 app</button>
                             <i class="fa-solid fa-angles-right text-white"></i>
                             <button type="button"
-                                class="btn btn-sm bg-button-blue text-white rounded-pill d-lg-none d-xl-none">+</button>
+                                class="btn btn-sm  text-white rounded-pill d-lg-none d-xl-none">+</button>
                             <button type="button"
-                                class="btn btn-sm bg-button-blue text-white rounded-pill d-none d-lg-inline-block d-xl-inline-block">Boolean
+                                class="btn btn-sm  text-white rounded-pill d-none d-lg-inline-block d-xl-inline-block">Boolean
                                 mobile app</button>
                             <button type="button"
-                                class="btn btn-sm bg-button-blue text-white rounded-pill d-none d-lg-inline-block d-xl-inline-block">Boolean
+                                class="btn btn-sm text-white rounded-pill d-none d-lg-inline-block d-xl-inline-block">Boolean
                                 web app</button>
                             <button type="button"
-                                class="btn btn-sm bg-button-blue text-white rounded-pill d-none d-lg-inline-block d-xl-inline-block">Boolean
+                                class="btn btn-sm  text-white rounded-pill d-none d-lg-inline-block d-xl-inline-block">Boolean
                                 blog app</button>
                         </div>
 
@@ -150,6 +153,110 @@
                         </div>
                         <div class="col-12 col-md-4 col-lg-3">
                             <span>Nuovo stduente</span>
+                            <button class="btn  btn-outline-primary " type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+
+                            </button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <label for="inputEmail4" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" placeholder="First name"
+                                                aria-label="">
+                                        </div>
+                                        <div class="col">
+                                            <label for="inputEmail4" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" placeholder="" aria-label="">
+                                        </div>
+                                    </div>
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="inputEmail4" class="form-label">Email</label>
+
+                                            <div class="input-group   ">
+                                                <span class="input-group-text">@
+                                                </span>
+                                                <input type="text" class="form-control  " aria-label=" Dollar amount
+                                                            (with dot and two decimal places)">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="col-12">
+                                                <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="inputAddress"
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="inputCity" class="form-label">Città</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <div class="col-12">
+
+                                            <label for="inputAddress" class="form-label">Foto</label>
+                                            <div class="col d-flex">
+                                                <div class="col-3">
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Scegli</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-9">
+                                                    <input type="text" class="form-control" id="" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="inputState" class="form-label">Stato</label>
+                                            <select id="inputState" class="form-select">
+                                                <option selected>Scegli</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label for="inputZip" class="form-label">Cap</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check  m-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Seleziona per proseguire
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Salva</button>
+                                            <button type="submit" class="btn btn-warning">Svuota</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -168,104 +275,109 @@
 
                                 <table class="table table-light">
                                     <tr>
-                                        <th class="col-4 ">Nome</th>
+                                        <th class="col-4">Nome</th>
                                         <th class="col-2 d-none d-sm-none d-md-block">Data inizio</th>
-                                        <th class="col-2"> ROI</th>
+                                        <th class="col-2">ROI</th>
                                         <th class="col-2">Stato</th>
                                         <th class="col-2">azioni</th>
                                     </tr>
                                     <tr>
-                                        <td> <i class="fa-solid fa-o"></i> Classe 75</td>
+                                        <td> <img id="avatar" src="img/class-avatar.jpg" alt=""> Classe 75</td>
                                         <td class="d-none d-sm-none d-md-block">15 Feb 2021</td>
                                         <td>20%</td>
                                         <td>
-                                            <button type="button" class="btn btn-success">Done</button>
+                                            <button type="button" class="btn btn-success rounded-pill ">Done</button>
                                         </td>
-                                        <td><button type="button" class="btn btn-outline-secondary me-1"><i
+                                        <td><button type="button" class="btn  btn-outline-secondary "><i
+                                                    class="fa-solid fa-pen"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary"><i
+                                                    class="fa-solid fa-trash-can"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <img id="avatar" src="img/class-avatar.jpg" alt=""> Classe 76</td>
+                                        <td class=" d-none d-sm-none d-md-block">16 feb 2021</td>
+                                        <td>20%</td>
+                                        <td>
+                                            <button type="button" class="btn btn-success rounded-pill">Done</button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-outline-secondary  "><i
                                                     class="fa-solid fa-pen"></i></button>
                                             <button type="button" class="btn btn-outline-secondary "><i
                                                     class="fa-solid fa-trash-can"></i></button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><i class="fa-solid fa-o"></i> Classe 76</td>
-                                        <td class=" d-none d-sm-none d-md-block">16 feb 2021</td>
-                                        <td>20%</td>
-                                        <td>
-                                            <button type="button" class="btn btn-success">Done</button>
-                                        </td>
-                                        <td>
-                                            <button type="button" class="btn btn-outline-secondary me-1"><i
-                                                    class="fa-solid fa-pen"></i></button>
-                                            <button type="button" class="btn btn-outline-secondary"><i
-                                                    class="fa-solid fa-trash-can"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa-solid fa-o"></i> Classe 77</td>
+                                        <td> <img id="avatar" src="img/class-avatar.jpg" alt=""> Classe 77</td>
                                         <td class=" d-none d-sm-none d-md-block">17 feb 2021</td>
                                         <td>20%</td>
                                         <td>
-                                            <button type="button" class="btn btn-warning">Process</button>
+                                            <button type="button" class="btn btn-warning rounded-pill">Process</button>
                                         </td>
-                                        <td><button type="button" class="btn btn-outline-secondary me-1"><i
+                                        <td><button type="button" class="btn btn-outline-secondary "><i
                                                     class="fa-solid fa-pen"></i></button>
-                                            <button type="button" class="btn btn-outline-secondary"><i
-                                                    class="fa-solid fa-trash-can"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary "><i
+                                                    class="fa-solid fa-trash-can "></i></button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><i class="fa-solid fa-o"></i> Classe 78</td>
+                                        <td> <img id="avatar" src="img/class-avatar.jpg" alt=""></i> Classe 78</td>
                                         <td class=" d-none d-sm-none d-md-block">18 feb 2021</td>
                                         <td>20%</td>
                                         <td>
-                                            <button type="button" class="btn btn-success">Done</button>
+                                            <button type="button" class="btn btn-success rounded-pill">Done</button>
                                         </td>
                                         <td>
-                                            <button type="button" class="btn btn-outline-secondary me-1"><i
+                                            <button type="button" class="btn btn-outline-secondary"><i
                                                     class="fa-solid fa-pen"></i></button>
                                             <button type="button" class="btn btn-outline-secondary"><i
                                                     class="fa-solid fa-trash-can"></i></button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><i class="fa-solid fa-o"></i> Classe 79</td>
+                                        <td> <img id="avatar" src="img/class-avatar.jpg" alt=""> Classe 79</td>
                                         <td class=" d-none d-sm-none d-md-block">19 feb 2021</td>
                                         <td>20%</td>
-                                        <td><button type="button" class="btn btn-danger">Failed</button></td>
-                                        <td><button type="button" class="btn btn-outline-secondary me-1"><i
+                                        <td><button type="button" class="btn btn-danger rounded-pill">Failed</button>
+                                        </td>
+                                        <td><button type="button" class="btn btn-outline-secondary me-1 "><i
                                                     class="fa-solid fa-pen"></i></button></button><button type="button"
-                                                class="btn btn-outline-secondary"><i
+                                                class="btn btn-outline-secondary "><i
                                                     class="fa-solid fa-trash-can"></i></button></td>
                                     </tr>
                                     <tr>
-                                        <td><i class="fa-solid fa-o"></i> Classe 80</td>
+                                        <td> <img id="avatar" src="img/class-avatar.jpg" alt=""> Classe 80</td>
                                         <td class=" d-none d-sm-none d-md-block">20 feb 2021</td>
                                         <td>20%</td>
-                                        <td><button type="button" class="btn btn-success  ">Done</button></td>
+                                        <td><button type="button" class="btn btn-success rounded-pill ">Done</button>
+                                        </td>
                                         <td><button type="button" class="btn btn-outline-secondary me-1"><i
                                                     class="fa-solid fa-pen "></i></button></button><button type="button"
-                                                class="btn btn-outline-secondary"><i
+                                                class="btn btn-outline-secondary "><i
                                                     class="fa-solid fa-trash-can"></i></button></td>
                                     </tr>
                                     <tr>
-                                        <td><i class="fa-solid fa-o"></i> Classe 81</td>
+                                        <td> <img id="avatar" src="img/class-avatar.jpg" alt=""> Classe 81</td>
                                         <td class=" d-none d-sm-none d-md-block">21 feb 2021</td>
                                         <td></td>
-                                        <td><button type="button" class="btn btn-danger">Failed</button></td>
-                                        <td><button type="button" class="btn btn-outline-secondary me-1"><i
+                                        <td><button type="button" class="btn btn-danger rounded-pill">Failed</button>
+                                        </td>
+                                        <td><button type="button" class="btn btn-outline-secondary me-1 "><i
                                                     class="fa-solid fa-pen"></i></button></button><button type="button"
-                                                class="btn btn-outline-secondary"><i
+                                                class="btn btn-outline-secondary "><i
                                                     class="fa-solid fa-trash-can"></i></button></td>
                                     </tr>
                                     <tr>
-                                        <td><i class="fa-solid fa-o"></i> Classe 82</td>
+                                        
+                                        <td> <img id="avatar" src="img/class-avatar.jpg" alt="">   Classe 82</td>
                                         <td class=" d-none d-sm-none d-md-block">22 feb 2021</td>
                                         <td>20%</td>
-                                        <td><button type="button" class="btn btn-success">Done</button></td>
+                                        <td><button type="button" class="btn btn-success rounded-pill">Done</button>
+                                        </td>
                                         <td><button type="button" class="btn btn-outline-secondary me-1"><i
                                                     class="fa-solid fa-pen"></i></button><button type="button"
-                                                class="btn btn-outline-secondary"><i
+                                                class="btn btn-outline-secondary "><i
                                                     class="fa-solid fa-trash-can"></i></button>
                                         </td>
                                     </tr>
@@ -274,6 +386,7 @@
                             </div>
 
                         </div>
+
                         <!-- sezione F.A.Q -->
                         <div class="row border rounded bg-white m-3 ">
                             <div class="col border rounded   m-3 ">
@@ -359,6 +472,7 @@
 
                                 </div>
                                 <hr>
+
                                 <div class="form-check m-2">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">

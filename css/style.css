@@ -1,5 +1,5 @@
 body {
-
+ font-family: 'Roboto', sans-serif;
     height: 100vh;
 
 }
@@ -26,7 +26,7 @@ body {
     width: 40px;
 }
 .img-desk{
-    width: 100px; 
+    width: 120px; 
 }
 .fa-magnifying-glass {
     font-size: 15px;
@@ -48,16 +48,40 @@ body {
     color: white;
 }
 .icon:hover{
-background-color: rgba(255, 255, 255, 0.2);
+background-color: rgba(255, 255, 255, 0.49);
 
 }
+.dropdown-toggle:after {
+    content: none
+}
+/* <!-- SEZIONE HEADER MAIN --> */
+.btn .text-white{
+    background-color:#072f68 ;
+}
+/* <!--REGOLE SEZIONE PROSSIME CLASSI --> */
 
+.btn-outline-primary{
+    border-color: white;
+    color: white;
+}
+.btn-outline-primary:hover{
+    border-color: white; 
+}
 /* debug */
 nav {
     height: 80px;
     background-color: black;
 }
 
+td{
+    position: relative;
+}
+#avatar{
+ 
+    width: 8%;
+    left: -10px;
+    top: 10px;
+}
 .minus {
     width: 100%;
     height: calc(100vh - 60px);
