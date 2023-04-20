@@ -59,11 +59,10 @@ background-color: rgba(255, 255, 255, 0.49);
 .right-side {
     width: calc(100% - 60px);
     height: 100%;
- 
     overflow: scroll;
 }
-.btn .text-white{
-    background-color:#072f68 ;
+#h-button{
+    background-color:#185cbb;
 }
 /* <!--REGOLE SEZIONE PROSSIME CLASSI --> */
 
@@ -74,26 +73,40 @@ background-color: rgba(255, 255, 255, 0.49);
 .btn-outline-primary:hover{
     border-color: white; 
 }
-/* debug */
-nav {
-    height: 80px;
-    background-color: black;
-}
 
-td{
-    position: relative;
+
+.img-tab{
+    width: 30px;
 }
 #avatar{
- 
-    width: 8%;
-    left: -10px;
-    top: 10px;
+width: 30px;
+ padding-bottom: 4px;
+}
+#table-button{
+height: 25px;
+font-size: 12px;
+}
+
+.fa-pen{
+width: 10px;
+
+font-size: 15px;
+}
+.fa-trash-can{
+    width: 10px;
+   
+    font-size: 15px;
 }
 .minus {
     width: 100%;
     height: calc(100vh - 60px);
 
 }
+/* debug */
+/* nav {
+    height: 80px;
+    background-color: black;
+} */
 
 /* .left-side {
     width: 60px;
